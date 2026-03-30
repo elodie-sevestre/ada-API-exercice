@@ -10,8 +10,8 @@ export async function callOpenMeteoAPI(lat, lon) {
     // TODO `https://api.open-meteo.com/`
     const response = await fetch(
       `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}`,
-    );
-    const data = await response.json();
+    ); // données RAW
+    const data = await response.json(); // transforme RAW en JSON
     console.log(data);
     return;
   } catch (err) {
