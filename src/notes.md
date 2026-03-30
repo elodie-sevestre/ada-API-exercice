@@ -58,3 +58,38 @@ console.log("Code météo  :", data.current.weathercode);
 - **Query params** — les paramètres dans l'URL après le `?` (`latitude=50.63`, etc.)
 - **Réponse JSON** — le format de données standard des APIs
 - **async/await** — indispensable car les appels réseau prennent du temps
+
+# Structure des fichiers de l'exercice
+
+## La structure des fichiers
+
+Tu as une séparation bien organisée :
+
+- **`open-meteo.js`** — s'occupe uniquement de **parler à l'API** (récupérer les données brutes)
+- **`main.js`** — s'occupe d'**afficher les données** dans la page et de gérer les boutons
+- **`index.html`** — le squelette visuel, avec les boutons et les zones à remplir
+
+L'idée c'est que chaque fichier a **une seule responsabilité**. C'est un principe important en dev.
+
+---
+
+## Commençons par `open-meteo.js`
+
+Regarde la fonction `callOpenMeteoAPI(lat, lon)` :
+
+```js
+export async function callOpenMeteoAPI(lat, lon) {
+  try {
+    // TODO `https://api.open-meteo.com/`
+    return;
+  } catch (err) {
+    console.error(err);
+  }
+}
+```
+
+**Quelques questions pour toi :**
+
+1. À quoi servent les paramètres `lat` et `lon` selon toi ?
+2. Le commentaire mentionne la doc Open-Meteo. En regardant l'URL de tout à l'heure (`https://api.open-meteo.com/v1/forecast?latitude=50.63&longitude=3.06&current=temperature_2m`), comment tu construirais l'URL pour une latitude et longitude **variables** ?
+3. Qu'est-ce que le `try/catch` fait ici ?
