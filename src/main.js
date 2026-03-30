@@ -1,4 +1,5 @@
 import "./style.css";
+import { callOpenMeteoAPI } from "./calling/open-meteo";
 /**
  * Lance la requête vers l'API et remplace les données une fois obtenue.
  */
@@ -33,3 +34,5 @@ const cities = {
 // - - - - - - - - - - - E X E C U T I O N - - - - - - - - - - - - - - -
 // =====================================================================
 renderOpenMeteo();
+
+callOpenMeteoAPI();
