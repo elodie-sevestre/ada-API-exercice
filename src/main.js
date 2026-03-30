@@ -6,7 +6,6 @@ import { callOpenMeteoAPI } from "./calling/open-meteo";
 let renderOpenMeteo = async () => {
   // TODO
   const data = await callOpenMeteoAPI(cities.Nantes.lat, cities.Nantes.lon);
-  console.log(data);
 };
 
 const cities = {
