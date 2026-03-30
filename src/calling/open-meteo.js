@@ -13,7 +13,7 @@ export async function callOpenMeteoAPI(lat, lon) {
     ); // données RAW / consulter la doc pour avoir l'URL
     const data = await response.json(); // transforme RAW en JSON
     console.log(data);
-    return;
+    return data;
   } catch (err) {
     console.error(err);
   }
