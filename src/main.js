@@ -28,16 +28,6 @@ const cities = {
   },
 };
 
-// =========================================== DOM ===============================================
-
-Object.keys(cities).forEach((city) => {
-  document
-    .querySelector(`#${city.toLowerCase()}`)
-    .addEventListener("click", () => {
-      renderOpenMeteo(city);
-    });
-});
-
 // =========================================== API ===============================================
 
 /**
@@ -49,6 +39,16 @@ const renderOpenMeteo = async (city) => {
   const currentWeather = document.querySelector(".current-weather");
   currentWeather.textContent = data.current.temperature_2m;
 };
+
+// =========================================== DOM ===============================================
+
+Object.keys(cities).forEach((city) => {
+  document
+    .querySelector(`#${city.toLowerCase()}`)
+    .addEventListener("click", () => {
+      renderOpenMeteo(city);
+    });
+});
 
 // =====================================================================
 // - - - - - - - - - - - E X E C U T I O N - - - - - - - - - - - - - - -
