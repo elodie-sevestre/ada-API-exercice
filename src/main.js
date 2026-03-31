@@ -73,7 +73,10 @@ const renderOpenMeteo = async (city) => {
   const listItems = document.querySelectorAll("li");
   data.daily.time.slice(0, 5).forEach((day, index) => {
     listItems[index].textContent =
-      `${new Date(day).toLocaleDateString("fr-FR", { weekday: "short", day: "numeric", month: "short", year: "numeric" })} : ${weatherData[data.daily.weather_code[index]].icon}  ${weatherData[data.daily.weather_code[index]].description} ${data.daily.temperature_2m_min[index]} / ${data.daily.temperature_2m_max[index]}°C`;
+      `${new Date(day).toLocaleDateString("fr-FR", { weekday: "short", day: "numeric", month: "short", year: "numeric" })} :
+       ${weatherData[data.daily.weather_code[index]].icon}  
+       ${weatherData[data.daily.weather_code[index]].description} ${data.daily.temperature_2m_min[index]}
+        / ${data.daily.temperature_2m_max[index]}°C`;
   });
 };
 
