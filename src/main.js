@@ -1,7 +1,7 @@
 // ========================================== IMPORTS ============================================
 
 import "./style.css";
-import { renderOpenMeteo } from "./calling/open-meteo";
+import { callOpenMeteoAPI } from "./calling/open-meteo";
 
 // ========================================= VARIABLES ===========================================
 
