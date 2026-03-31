@@ -10,21 +10,17 @@ const cities = {
     lat: 47.2184,
     lon: -1.5536,
   },
-  Paris: {
-    lat: 48.8566,
-    lon: 2.3522,
+  "Mont-de-Marsan": {
+    lat: 43.8902,
+    lon: -0.4971,
   },
-  Rennes: {
-    lat: 48.1173,
-    lon: -1.6778,
+  Dumes: {
+    lat: 43.7056,
+    lon: -0.584,
   },
-  Caen: {
-    lat: 49.1829,
-    lon: -0.3707,
-  },
-  Marseille: {
-    lat: 43.2965,
-    lon: 5.3698,
+  "Saint-sever": {
+    lat: 43.7573,
+    lon: -0.5718,
   },
 };
 
