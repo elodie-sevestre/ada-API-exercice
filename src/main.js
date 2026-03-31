@@ -22,6 +22,22 @@ const cities = {
     lat: 43.7573,
     lon: -0.5718,
   },
+  Lorient: {
+    lat: 47.7482,
+    lon: -3.3718,
+  },
+  Ancenis: {
+    lat: 47.3667,
+    lon: -1.1667,
+  },
+  Monnières: {
+    lat: 47.1319,
+    lon: -1.3565,
+  },
+  "Saint-Jean-de-Boiseau": {
+    lat: 47.1942,
+    lon: -1.7248,
+  },
 };
 
 const weatherData = {
