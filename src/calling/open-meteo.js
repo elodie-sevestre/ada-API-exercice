@@ -59,7 +59,7 @@ Object.keys(cities).forEach((city) => {
 /**
  * Lance la requête vers l'API et remplace les données une fois obtenue.
  */
-export let renderOpenMeteo = async (city) => {
+export const renderOpenMeteo = async (city) => {
   // TODO
   const data = await callOpenMeteoAPI(cities[city].lat, cities[city].lon);
   const currentWeather = document.querySelector(".current-weather");
