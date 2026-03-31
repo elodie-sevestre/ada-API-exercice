@@ -70,7 +70,7 @@ const renderOpenMeteo = async (city) => {
   const currentWeather = document.querySelector(".current-weather");
   currentWeather.textContent = `${weatherIcons[data.current.weather_code]} ${data.current.temperature_2m}°C`;
   const listItems = document.querySelectorAll("li");
-  data.daily.time.forEach((day, index) => {
+  data.daily.time.slice(0, 5).forEach((day, index) => {
     listItems[index].textContent =
       `${new Date(day).toLocaleDateString("fr-FR", { weekday: "short", day: "numeric", month: "short", year: "numeric" })} : ${weatherIcons[data.daily.weather_code[index]]} ${data.daily.temperature_2m_min[index]} / ${data.daily.temperature_2m_max[index]}°C`;
   });
