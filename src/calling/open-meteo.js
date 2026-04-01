@@ -12,7 +12,7 @@ export async function callOpenMeteoAPI(lat, lon) {
       `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m,weather_code&daily=weather_code,temperature_2m_max,temperature_2m_min`,
     ); // données RAW / consulter la doc pour avoir l'URL
     const data = await response.json(); // transforme RAW en JSON
-    console.log(data);
+    // console.log(data);
     return data;
   } catch (err) {
     console.error(err);
