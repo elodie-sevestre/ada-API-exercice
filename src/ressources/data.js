@@ -33,6 +33,10 @@ export const cities = {
     lat: 47.1942,
     lon: -1.7248,
   },
+  Toulouse: {
+    lat: 43.6043,
+    lon: 1.4437,
+  },
 };
 
 //! faire un switch case pour weather data ???
