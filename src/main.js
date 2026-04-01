@@ -83,7 +83,7 @@ const renderOpenMeteo = async (city) => {
   ${weatherData[data.current.weather_code].description}  
   ${data.current.temperature_2m}°C`;
   const listItems = document.querySelectorAll("li");
-  data.daily.time.slice(0, 5).forEach((day, index) => {
+  data.daily.time.slice(1, 6).forEach((day, index) => {
     listItems[index].textContent =
       `${new Date(day).toLocaleDateString("fr-FR", { weekday: "short", day: "numeric", month: "short", year: "numeric" })} :
        ${weatherData[data.daily.weather_code[index]].icon}  
